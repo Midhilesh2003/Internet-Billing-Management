@@ -1,7 +1,7 @@
 <?php session_start();
 if(!isset($_SESSION['id'])){
 	echo '<script>windows: location="index.php"</script>';
-	
+
 	}
 ?>
 <?php
@@ -35,7 +35,7 @@ while($row = mysqli_fetch_array($result))
 	  })
 	})
   </script>
-<script src="js/application.js" type="text/javascript" charset="utf-8"></script>	
+<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billing System</title>
 <style type="text/css">
@@ -66,7 +66,7 @@ float:left;
 -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
  box-shadow:0 0 18px rgba(0,0,0,0.4);
  margin-top:5%;
-	
+
 }
 #ryt {
 float:right;
@@ -88,10 +88,10 @@ float:right;
 <body>
 <div class="container">
 <div id="wrapper">
-  <h1><center><b>Water Billing System</b></center></h1>
-  
- <div style="color:#F00; font-size:12px; margin-left:900px;"> 
-  <span><?php echo $sessionname;?></span><a href="logout.php"><span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
+  <h1><center><b>Internet Billing System</b></center></h1>
+
+ <div style="color:#F00; font-size:12px; margin-left:900px;">
+  <span><h4>Midhilesh Chinta</4></span><a href="logout.php"><span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
   </div>
   <ul class="nav nav-pills">
     <li><a href="billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
@@ -104,14 +104,14 @@ float:right;
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
     <!-------- home panel ----------------------------->
-      
-      
+
+
          <div class="panel panel-info">
             <div class="panel-heading">
                 <div class="panel-title"><h5>System Users</h5><a rel='facebox' href="adduser.php" ><button type="button" class="btn btn-primary btn-xs">Add User</button></a><a href="deleteuser.php"><button type="button" class="btn btn-danger btn-xs">Delete all</button></a></div>
             </div>
               <div class="panel-body">
-            
+
   <?php
 include 'db.php';
 
@@ -142,14 +142,14 @@ echo "</table>";
 ?>
 
 
-              
+
               </div>
            </div>
          </div>
       </div>
     </div>
    <!-----  ######################################### -->
-   
+
 
 </div>
 </body>
@@ -178,7 +178,7 @@ var info = 'id=' + del_id;
    url: "delete.php",
    data: info,
    success: function(){
-   
+
    }
  });
          $(this).parents(".record").animate({ backgroundColor: "#fbc7c7" }, "fast")

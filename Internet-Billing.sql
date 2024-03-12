@@ -29,7 +29,7 @@ CREATE TABLE `owners` (
 
 INSERT INTO `owners` (`id`, `lname`, `fname`, `mi`, `address`, `contact`) VALUES
 (1, 'Eda', 'kimei', '90', 'Mbinga', '0654100235'),
-(2, 'Den', 'Harry', '22', 'espn', '7515396522'),
+(2, 'Chinta', 'Midhilesh', '22', 'espn', '7515396522'),
 (3, 'demo', 'demo', '54', 'demo', '5454542222'),
 (4, 'walker', 'Paul', '22', 'demo address', '8521479645'),
 (5, 'kent', 'Clark', '63', 'npp', '852541000'),
@@ -53,7 +53,7 @@ CREATE TABLE `tempo_bill` (
 
 INSERT INTO `tempo_bill` (`id`, `Prev`, `Client`) VALUES
 (1, '600', 'kimei'),
-(2, '500', 'Harry'),
+(2, '500', 'Midhilesh'),
 (3, '01', 'demo'),
 (4, '166', 'Paul'),
 (5, '230', 'Clark'),

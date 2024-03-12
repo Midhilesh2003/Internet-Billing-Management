@@ -92,7 +92,7 @@ while($row = mysqli_fetch_array($result))
     <div id="wrapper">
         <h1><center><b>Internet Billing Management</b></center></h1>
         <div style="color:#F00; font-size:12px; margin-left:900px;">
-            <span><?php echo $sessionname;?></span><a href="logout.php"><span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
+            <span>Midhilesh Chinta</span><a href="logout.php"><span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
         </div>
         <ul class="nav nav-pills">
             <li><a href="billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>

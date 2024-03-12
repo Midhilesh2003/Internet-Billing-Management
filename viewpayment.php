@@ -92,7 +92,7 @@ while($row = mysqli_fetch_array($result))
 
   }
 ?>
-<tr><td>Casher:<?php echo $sessionname;?></td><td>Signature:_____________</td></tr>
+<tr><td>Casher: Midhilesh Chinta</td><td>Signature:_____________</td></tr>
 
 
 </table>

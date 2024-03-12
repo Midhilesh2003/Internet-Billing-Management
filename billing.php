@@ -2,9 +2,9 @@
 if(!isset($_SESSION['id'])){
 	echo '<script>windows: location="index.php"</script>';
 
-	
+
 	}
-		
+
 ?>
 <?php
 $session=$_SESSION['id'];
@@ -12,10 +12,10 @@ include 'db.php';
 $result = mysqli_query($conn,"SELECT * FROM user where id= '$session'");
 while($row = mysqli_fetch_array($result))
   {
-  $sessionname=$row['name'];
+  $sessionname=$row['Midhilesh Chinta'];
 
   }
-  
+
 ?>
 <?php
 include 'db.php';
@@ -35,23 +35,23 @@ include 'db.php';
 
 <?php
 if (isset($_POST['add']))
-	{	   
+	{
 	include 'db.php';
 			 		$id=$_POST['id'] ;
-					$lname= $_POST['lname'] ;					
+					$lname= $_POST['lname'] ;
 					$fname=$_POST['fname'] ;
 					$mi=$_POST['mi'] ;
 					$address=$_POST['address'] ;
 					$contact=$_POST['contact'] ;
-					
-		 mysqli_query($conn,"INSERT INTO  owners (id,lname,fname,mi,address,contact) 
-		 VALUES ('$id','$lname','$fname','$mi','$address','$contact')"); 
-				
+
+		 mysqli_query($conn,"INSERT INTO  owners (id,lname,fname,mi,address,contact)
+		 VALUES ('$id','$lname','$fname','$mi','$address','$contact')");
+
 				echo '<script>alert("success")</script>';
-				
-				
+
+
 	        }
-	
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -87,7 +87,7 @@ function addCommas(nStr){
 	  })
 	})
   </script>
-<script src="js/application.js" type="text/javascript" charset="utf-8"></script>	
+<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Billing System</title>
 <style type="text/css">
@@ -118,7 +118,7 @@ float:left;
 -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
  box-shadow:0 0 18px rgba(0,0,0,0.4);
  margin-top:5%;
-	
+
 }
 #ryt {
 float:right;
@@ -140,9 +140,9 @@ float:right;
 <body>
 <div class="container">
 <div id="wrapper">
-  <h1><center><b>Water Billing System</b></center></h1>
-  <div style="color:#F00; font-size:12px; margin-left:900px;"> 
-  <span><?php echo $sessionname;?></span><a href="logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
+  <h1><center><b>Internet Billing System</b></center></h1>
+  <div style="color:#F00; font-size:12px; margin-left:900px;">
+  <span>Midhilesh Chinta</span><a href="logout.php">   <span class="btn btn-danger  glyphicon glyphicon-log-out">&nbsp;Logout</span></a>
   </div>
   <ul class="nav nav-pills">
     <li class="btn btn-default btn-xs"><a href="billing.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
@@ -154,9 +154,9 @@ float:right;
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
     <!-------- home panel ----------------------------->
-      <h4>Welcome Dear, <?php echo $sessionname; ?></4>
+      <h4>Welcome Midhilesh Chinta</4>
       <hr color="#000000" />
-      
+
       <div class="col-md-4">
          <div class="panel panel-info">
             <div class="panel-heading">
@@ -192,14 +192,14 @@ float:right;
               <h1 align="center" style="font:Verdana, Geneva, sans-serif; font-weight:bolder;"><?php echo $bill; ?>
               <?php
               include "db.php";
-			 
+
 			  $add=mysqli_query($conn,"Select SUM(price) from Bill");
               while($row1=mysqli_fetch_array($add))
                {
                  $total=$row1['SUM(price)'];
                   }
-			  
-			 
+
+
 			  ?>
               </h1>
               </div>
@@ -208,7 +208,7 @@ float:right;
       </div>
     </div>
    <!--------- ########################################### ------>
-    
+
     <!-------------------------------- home ends ------------------------------>
 
 </div>
@@ -238,7 +238,7 @@ var info = 'id=' + del_id;
    url: "delete.php",
    data: info,
    success: function(){
-   
+
    }
  });
          $(this).parents(".record").animate({ backgroundColor: "#fbc7c7" }, "fast")
@@ -251,4 +251,4 @@ return false;
 });
 
 });
-</script> 
+</script>

@@ -13,7 +13,7 @@ while($row = mysqli_fetch_array($result))
 }
 ?>
 
-<p style="color:#F00; font-size:12px;">Welcome <?php echo $sessionname;?></p>
+<p style="color:#F00; font-size:12px;">Welcome Midhilesh Chinta</p>
 <?php
 if (isset($_POST['add'])) {
     include 'db.php';
