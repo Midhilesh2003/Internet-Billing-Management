@@ -79,7 +79,7 @@ CREATE TABLE `user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO `user` (`id`, `username`, `password`, `name`) VALUES
-(4, 'admin', 'admin', 'Harry Den'),
+(4, 'admin', 'admin', 'Midhilesh Chinta'),
 (8, 'demo', 'demo', 'demo user'),
 (9, 'markden', 'code0', 'Mark Den'),
 (10, 'christine', 'code0', 'Christine Grey');
