@@ -5,12 +5,12 @@ $owner_id =$_REQUEST['id'];
 
 $result = mysqli_query($conn,"SELECT * FROM owners WHERE id  = '$owner_id'");
 $test = mysqli_fetch_array($result);
-if (!$result) 
+if (!$result)
 		{
 		die("Error: Data not found..");
 		}
 				$id=$test['id'] ;
-				$lname= $test['lname'] ;					
+				$lname= $test['lname'] ;
 				$fname=$test['fname'] ;
 				$mi=$test['mi'] ;
 				$address=$test['address'] ;
@@ -42,7 +42,7 @@ $previous = $results['Prev'];
   <tr>
     <td>Price/ml</td>
     <td><input type="text" name="price" value="10"  /></td>
-    <td>Tshs</td>
+    <td>Rupees Only</td>
   </tr>
    <tr>
     <td><input type="submit" name="total" value="Add"  /></td>

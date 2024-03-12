@@ -73,15 +73,15 @@ function printDiv(data) {
 <div id="context">
 <table class="table table-striped table-bordered">
 <tr><td>Last Name:</td><td><b><i><?php echo $lname; ?></i></b></td><td>Client ID</td><td><i>SMART/00<?php echo $id; ?></i></td> </tr>
-<tr><td>First Name</td><td><b><i><?php echo $fname; ?></td><td>Meter Number</td><td><?php echo $mi; ?></td></tr>
+<tr><td>First Name</td><td><b><i><?php echo $fname; ?></td><td>Service Number</td><td><?php echo $mi; ?></td></tr>
 
 <tr><td>Address: </td><td><b><i><?php echo $address; ?></td></tr>
 <tr><td>Contact: </td><td><b><i><?php echo $contact; ?></td></tr>
 <tr><td>Previous Reading :</td><td><b><i> <?php echo $prev;?> </td><td>Present Reading : </td><td><b><i><?php echo $pres; ?> </td></tr>
 <tr><td>Consumption: </td><td><b><i><?php echo $totalcons;?> </td><td>Price / unit : </td>
-<td><b><i><?php echo $price; ?>&nbsp;Tshs </td>
+<td><b><i><?php echo $price; ?>&nbsp;Rupees </td>
 </tr>
-<tr><td colspan="4"><center><h2>Total Invoice:<b><i> <?php echo $bill; ?><b><i> /= Tshs</h2></center></td></tr>
+<tr><td colspan="4"><center><h2>Total Invoice:<b><i> <?php echo $bill; ?><b><i> Rupees Only</h2></center></td></tr>
 <?php
 $session=$_SESSION['id'];
 include 'db.php';
