@@ -67,7 +67,7 @@ function printDiv(data) {
 <h4><center><b>Internet Billing Management</b></center></h4>
 <p>ESPSN - ESSP</p>
 <p><strong>Bill Invoice</strong></p>
-<p>Phone: +255 (0) 654 235</p>
+<p>Phone: +91 99999 99999</p>
 <i style="text-align:right; margin-left:250px;">Date: <?php echo $date; ?></i>
 </center>
 <div id="context">
