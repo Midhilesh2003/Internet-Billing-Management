@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
-  <body style="background:url(img/warer-flow-pipe4.gif); background-size:cover;">
+  <body style="background:url(img/background.gif); background-size:cover;">
 
     <div class="container">
         <div id="loginbox" style="margin-top:200px; margin-right:800px; width:450px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-            <div class="panel panel-info" style="background:url(img/warer-flow-pipe3.gif); background-size:cover;">
+            <div class="panel panel-info" style="background:url(img/Login.gif); background-size:cover;">
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
 
